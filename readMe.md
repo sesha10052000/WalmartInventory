@@ -34,7 +34,19 @@ A full-stack Inventory Management System built for Walmart to manage item regist
 - Jest (Unit & Integration Testing)
 - Supertest (HTTP endpoint testing)
 
----
+## Test Cases
+- Add item successfully
+- Add item with missing fields
+- Add item with duplicate SKU
+- Fetch all items
+- Get item by valid ID
+- Get item by invalid ID
+- Update item details
+- Update with invalid ID
+- Delete item by ID
+- Delete item not found
+
+
 
 ## System Architecture
 
@@ -43,6 +55,7 @@ A full-stack Inventory Management System built for Walmart to manage item regist
 - **Database:** MongoDB with Mongoose for schema validation
 
 ## Commands
-npm init -y
-npm install express mongoose cors body-parser dotenv
-npm install nodemon --save-dev
+
+- npm init -y
+- npm install express mongoose cors body-parser dotenv
+- npm install nodemon --save-dev
