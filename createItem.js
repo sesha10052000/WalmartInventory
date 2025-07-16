@@ -15,19 +15,3 @@ document.getElementById('itemForm').addEventListener('submit', async function (e
     document.getElementById('message').innerText = "Please fill all fields.";
     return;
   }
-
-  try {
-    const res = await fetch("http://localhost:3000/items", {
-      method: "POST",
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(item)
-    });
-
-    const result = await res.json();
-    document.getElementById('message').innerText = result.message;
-    document.getElementById('itemForm').reset();
-  } catch (err) {
-    document.getElementById('message').innerText = "Error saving item.";
-    console.error(err);
-  }
-});
