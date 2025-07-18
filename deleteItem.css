@@ -1,0 +1,53 @@
+#controls {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#controls input {
+  padding: 10px;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#report {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#deleteTable {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+#deleteTable th, #deleteTable td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+#deleteTable th {
+  background-color: #005cbf;
+  color: white;
+}
+
+#deleteTable button {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#deleteTable button:hover {
+  background-color: darkred;
+}
