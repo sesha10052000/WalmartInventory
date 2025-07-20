@@ -35,6 +35,15 @@ app.post('/items', async (req, res) => {
   }
 });
 
+app.get('/items', async (req, res) => {
+  try {
+    const items = await Item.find();
+    res.status(200).json(items);
+  } catch (err) {
+    res.status(500).json({ message: "Error fetching items" });
+  }
+});
+
 
 
 // Export app and Item model
