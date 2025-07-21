@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Items - Walmart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="readItem.css">
+</head>
+<body>
+  <header>
+    <div class="header-bar">
+      <h1>Walmart</h1>
+      <button class="home-btn" onclick="location.href='index.html'">Home</button>
+    </div>
+    <h3>Smart Grocery Inventory Management</h3>
+    <nav>
+      <button onclick="location.href='createItem.html'">Create</button>
+      <button onclick="location.href='readItem.html'">Read</button>
+      <button onclick="location.href='updateItem.html'">Update</button>
+      <button onclick="location.href='deleteItem.html'">Delete</button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="tableContainer">
+      <h2>Inventory List</h2>
+      <table id="itemsTable">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Seller Name</th>
+            <th>Seller Phone</th>
+            <th>Seller Email</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Rows added by JS -->
+        </tbody>
+      </table>
+      <p id="message"></p>
+    </div>
+  </main>
+
+  <script src="readItem.js"></script>
+</body>
+</html>
