@@ -49,13 +49,3 @@ async function deleteItem(id) {
     alert("Error deleting item");
   }
 }
-
-// Search functionality
-document.getElementById('searchBox').addEventListener('input', e => {
-  const query = e.target.value.toLowerCase();
-  const filtered = items.filter(i => i.productName.toLowerCase().includes(query));
-  displayItems(filtered);
-  document.getElementById('totalCount').textContent = filtered.length;
-});
-
-fetchItems();
