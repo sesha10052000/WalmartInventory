@@ -1,0 +1,46 @@
+#controls {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#controls input, #controls select {
+  padding: 10px;
+  width: 45%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#report {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#updateTable {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+#updateTable th, #updateTable td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+#updateTable th {
+  background-color: #005cbf;
+  color: white;
+}
+
+#updateTable input {
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+}
