@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const { app, Item } = require('../server');
 
 beforeAll(async () => {
-  await mongoose.connect('mongodb://localhost:27017/walmartdb-test');
+  await mongoose.connect('mongodb://127:0.0.1:27017/walmartdb-test');
 });
 
 afterAll(async () => {
