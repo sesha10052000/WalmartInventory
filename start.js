@@ -4,7 +4,7 @@ const { app } = require('./server');
 
 const PORT = 3000;
 
-mongoose.connect('mongodb://localhost:27017/walmartdb')
+mongoose.connect('mongodb://127:0.0.1:27017/walmartdb')
   .then(() => {
     console.log("MongoDB connected");
     app.listen(PORT, () => {
